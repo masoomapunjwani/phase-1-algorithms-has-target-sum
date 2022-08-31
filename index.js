@@ -1,6 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  //iteration over each array
+    for(let i = 0; i < array.length; i++){
+      //iteration over
+      for(let j = i + 1; j < array.length; j++){
+        const sum = array[i] + array[j];
+        return true;
+      }
+    }return false;
 }
+
 
 /* 
   Write the Big O time complexity of your function here
